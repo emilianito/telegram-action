@@ -1,0 +1,19 @@
+name: 'Telegram'
+description: 'Send messages To telegram'
+inputs:
+  bot-token:
+    description: 'Telegram Bot Token'
+    required: true
+  chat-id:
+    description: 'Telegram Chat Id'
+    required: true
+  custom-message:
+    description: 'Custom message'
+    required: false
+    default: ''
+outputs:
+  out:
+    description: 'Output'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
